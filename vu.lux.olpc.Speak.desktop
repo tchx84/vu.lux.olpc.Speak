@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Speak
+GenericName=Speak
+TryExec=sugarapp
+Exec=sugarapp
+Icon=vu.lux.olpc.Speak
+Type=Application
+Comment=Speak
+Terminal=false
+StartupNotify=true
+Categories=Education;
