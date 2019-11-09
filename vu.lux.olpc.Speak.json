@@ -78,7 +78,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/sugarlabs/speak.git",
-                    "branch": "master"
+                    "tag": "v57"
                 },
                 {
                     "type": "file",
