@@ -87,6 +87,14 @@
                 {
                     "type": "patch",
                     "path": "speak-port.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "speak-fix-i18n.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "speak-fix-greeting.patch"
                 }
             ],
             "post-install": [

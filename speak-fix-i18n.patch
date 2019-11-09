@@ -1,0 +1,30 @@
+diff --git a/voice.py b/voice.py
+index 79bb10d..99600df 100644
+--- a/voice.py
++++ b/voice.py
+@@ -113,10 +113,10 @@ def allVoices():
+         voice = Voice(language, name)
+         _allVoices[voice.friendlyname] = voice
+ 
+-    if 'English' not in _allVoices:
++    if 'English' not in _allVoices and 'English (America)' in _allVoices:
+         _allVoices['English'] = _allVoices['English (America)']
+ 
+-    if 'Spanish' not in _allVoices:
++    if 'Spanish' not in _allVoices and 'Spanish (Latin America)' in _allVoices:
+         _allVoices['Spanish'] = _allVoices['Spanish (Latin America)']
+ 
+     return _allVoices
+@@ -152,9 +152,9 @@ def defaultVoice():
+         lang = ""
+ 
+     voice_names = [
+-        "English (America)",  # espeak-ng 1.49.2
+-        "English",  # espeak-ng 1.49.1
+-        "Default",  # espeak 1.48
++        _("English (America)"),  # espeak-ng 1.49.2
++        _("English"),  # espeak-ng 1.49.1
++        _("Default"),  # espeak 1.48
+     ]
+ 
+     best = None

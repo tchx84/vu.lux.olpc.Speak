@@ -1,0 +1,21 @@
+diff --git a/activity.py b/activity.py
+index 04f489c..c054466 100644
+--- a/activity.py
++++ b/activity.py
+@@ -361,14 +361,8 @@ class SpeakActivity(activity.Activity):
+             if self._tablet_mode:
+                 self._entry.props.text = _('Hello %s.') \
+                     % self.owner.props.nick.encode('utf-8', 'ignore')
+-            self.face.say_notification(_('Hello %s. Please Type something.')
+-                                       % self.owner.props.nick)
+-        else:
+-            if self._tablet_mode:
+-                self._entry.props.text = _('Welcome back %s.') \
+-                    % self.owner.props.nick.encode('utf-8', 'ignore')
+-            self.face.say_notification(_('Welcome back %s.')
+-                                       % self.owner.props.nick)
++        self.face.say_notification(_('Hello %s. Please Type something.')
++                                   % self.owner.props.nick)
+         self._set_idle_phrase(speak=False)
+         self._first_time = False
+ 
